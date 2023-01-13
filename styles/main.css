@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.just-fish {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    border: 2px solid black;
+    margin: 20px;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+}
+
+.fish-list-container {
+    display: flex;
+    margin: 20px;
+}
+
+.fish-text {
+    padding-left: 40px;
+}
+
+
+.main-container {
+    display: flex;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    margin: 20px;
+    width: 30%;
+    height: auto;
+}
