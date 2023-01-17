@@ -4,69 +4,44 @@
 <head>
     <title>Martin's Aquarium</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <section>
-        <h1>Martin's Aquarium</h1>
+        <h1 class="website-title">Martin's Aquarium</h1>
     </section>
     <section>
-        <h2>Martin's Fish Collection:</h2>
+        <h2 class="page-title">Martin's Fish Collection:</h2>
     </section>
-    <section class="main-container">
-        <div class="just-fish">
-            <div class="fish-list-container">
-                <div>
-                    <img src="nemo.jpeg">
-                </div>
-                <div class="fish-text">
-                    <h3>Species: Clownfish </h3>
-                    <p>Length: Small</p>
-                    <p>Name of Fish: Nemo</p>
-                    <p>Location Harvested: Sydney, Australia</p>
-                    <p>Diet: Fish are friends, not food</p>
-                </div>
+    <div class="main-container">
+        <div class="just-fish"></div>
+        <div class="aside-container">
+            <img src="martinsaquarium.png" class="logo">
+            <div class="quotes">
+                <h2><u>Quotes:</u></h2>
+                <p>“A fish only begins to realize its potential the moment you throw it in deep waters.”<br><b>― Matshona Dhliwayo</b></p>
+                <p>"Many men go fishing all of their lives without knowing that it is not fish they are after."<br><b>- Henry David Thoreau</b></p>
+                <p>"What is a fish without a river? What is a bird without a tree to nest in? What is an Endangered Species Act without any enforcement mechanism to ensure their habitat is protected? It is nothing."<br><b>- Jay Inslee</b></p>
             </div>
-            <div class="fish-list-container">
-                <div>
-                    <img src="nemo.jpeg">
-                </div>
-                <div class="fish-text">
-                    <h3>Species: Clownfish </h3>
-                    <p>Length: Small</p>
-                    <p>Name of Fish: Nemo</p>
-                    <p>Location Harvested: Sydney, Australia</p>
-                    <p>Diet: Fish are friends, not food</p>
-                </div>
-            </div>
-            <div class="fish-list-container">
-                <div>
-                    <img src="nemo.jpeg">
-                </div>
-                <div class="fish-text">
-                    <h3>Species: Clownfish </h3>
-                    <p>Length: Small</p>
-                    <p>Name of Fish: Nemo</p>
-                    <p>Location Harvested: Sydney, Australia</p>
-                    <p>Diet: Fish are friends, not food</p>
-                </div>
+            <div class="tank-care">
+                <h2><u>Fish/Tank Care:</u></h2>
+                <ol class="care-list">
+                    <li>Properly condition your water.</li>
+                    <li>Acclimate your fish to the water.</li>
+                    <li>Float fish in their bag.</li>
+                    <li>Maintain pH balance and other chemical levels.</li>
+                    <li>Make sure water temperature is right.</li>
+                    <li>Change water regularly.</li>
+                    <li>Clean tank glass and other structures.</li>
+                    <li>Choose the right size for your tank.</li>
+                    <li>Pick compatible fish species.</li>
+                    <li>Avoid overfeeding your fish.</li>
+                </ol>
             </div>
         </div>
-        <section class="quotes">
-            <div>
-                <h2>Quotes:</h2>
-                <p>quote #1</p>
-                <p>quote #2</p>
-                <p>quote #3</p>
-            </div>
-            <section class="tank-care">
-                <div>
-                    <h2>Fish/Tank Care:</h2>
-                    <p>tip #1</p>
-                    <p>tip #2</p>
-                    <p>tip #3</p>
-                </div>
-            </section>
-        </section>
-    </section>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
