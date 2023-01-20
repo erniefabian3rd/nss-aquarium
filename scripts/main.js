@@ -1,4 +1,7 @@
 import { getFish } from './database.js'
+import { FishList } from './fish/FishList.js'
+import { getTips } from './database.js'
+import { TipList } from './tips/TipList.js'
 
 const allFish = getFish()
 
@@ -6,8 +9,10 @@ for (const fish of allFish) {
     console.log(fish)
 }
 
+const allTips = getTips()
+
 // Import the FishList function from the correct module
-import { FishList } from './FishList.js'
+
 
 /*
     What is the CSS selector for the element where you
@@ -18,6 +23,7 @@ import { FishList } from './FishList.js'
  */
 
 const parentHTMLElement = document.querySelector(".just-fish")
-
-
 parentHTMLElement.innerHTML = FishList()
+
+const sectionHTMLElement = document.querySelector(".care-list")
+sectionHTMLElement.innerHTML = TipList()

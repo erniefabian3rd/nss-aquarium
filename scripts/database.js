@@ -66,3 +66,63 @@ const database = {
 export const getFish = () => {
     return database.fish.map(fish => ({...fish}))
 }
+
+export const mostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    let fishArray = getFish()
+    const holyFish = []
+
+    for (const fish of fishArray) {
+        if (fish.length % 3 === 0) {
+            holyFish.push(fish)
+        }
+    }
+
+    return holyFish
+}
+
+export const soldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+    let fishArray = getFish()
+    const soldiers = []
+
+    for (const fish of fishArray) {
+        if (fish.length % 5 === 0) {
+            soldiers.push(fish)
+        }
+    }
+    return soldiers
+}
+
+export const nonHolyFish = () => {
+    // Any fish not a multiple of 3 or 5
+    let fishArray = getFish()
+    const regularFish = []
+
+    for (const fish of fishArray) {
+        if (fish.length % 5 || 3 !== 0) {
+            regularFish.push(fish)
+        }
+    }
+
+    return regularFish
+}
+
+const tankCare = {
+    tips: [
+            "Properly condition your water.",
+            "Acclimate your fish to the water.",
+            "Float fish in their bag.",
+            "Maintain pH balance and other chemical levels.",
+            "Make sure water temperature is right.",
+            "Change water regularly.",
+            "Clean tank glass and other structures.",
+            "Choose the right size for your tank.",
+            "Pick compatible fish species.",
+            "Avoid overfeeding your fish."
+    ]
+}
+
+export const getTips = () => {
+    return tankCare.tips.map(tips => (tips))
+}
